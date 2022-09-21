@@ -1,0 +1,104 @@
+@font-face {
+  font-family: sam;
+  src: url(dd.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sam;
+}
+body {
+  background-color: rgb(192, 49, 195);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+.but {
+  position: relative;
+  padding: 20px;
+  text-decoration: none;
+  background: antiquewhite;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: 0.51px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: antiquewhite;
+
+  box-shadow: 0px 0px 10px 1px red;
+  overflow: hidden;
+  top: -100px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+.modal.active {
+  opacity: 1;
+  top: 150px;
+}
+.modal img {
+  width: 80px;
+  height: 60px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+}
+.modal h1 {
+  text-align: center;
+  text-shadow: 0 0 10px 2px red;
+  padding-bottom: 10px;
+}
+
+.modal p {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  left: 50px;
+  letter-spacing: 1.5px;
+  letter-spacing: 2000;
+}
+.modal input {
+  width: 400px;
+  position: relative;
+  left: 50px;
+  height: 29px;
+  border-radius: 5px;
+  border: 0px solid red;
+  box-shadow: 0px 0px 10px 1px rgb(147, 147, 147);
+  margin-top: 10px;
+}
+.modal button {
+  position: relative;
+  margin-top: 10px;
+  display: block;
+  width: 100px;
+  height: 29px;
+  left: 200px;
+  box-shadow: 0px 0px 10px 1px rgb(147, 147, 147);
+  background-color: rgb(236, 36, 200);
+  border-radius: 5px;
+  border: 0px solid red;
+  font-weight: 1000;
+  letter-spacing: 1.5px;
+}
+.x {
+  width: 150px;
+  height: 100px;
+  background-color: rgb(236, 36, 200);
+  position: relative;
+  top: -340px;
+  left: 440px;
+  font-size: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 0px 0px 10px 1px rgb(147, 147, 147);
+}
